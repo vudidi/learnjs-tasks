@@ -1,1 +1,1 @@
-# learnjs-tasks
+# Репозиторий для выполненных задач из учебника Learn JavaScript
