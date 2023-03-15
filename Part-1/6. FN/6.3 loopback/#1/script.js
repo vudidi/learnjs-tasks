@@ -20,3 +20,5 @@ console.log(counter()); // 1
 
 console.log(counter2()); // ?
 console.log(counter2()); // ?
+
+// Ответ: да, счетчики независимы. Вызов второго счетчика покажет 0, затем 1

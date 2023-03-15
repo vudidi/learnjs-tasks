@@ -1,14 +1,92 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      .arrow {
+        padding: 0;
+        border-radius: 15px;
+        border: 1px solid gray;
+        font-size: 24px;
+        line-height: 24px;
+        color: #3a6f8a;
+        display: block;
+      }
 
-<head>
-  <meta charset="UTF-8">
-</head>
+      .arrow:focus {
+        outline: none;
+      }
 
-<body>
-  <h1>Introduction to Events</h1>
-  <script src="script.js"></script>
-</body>
+      .arrow:hover {
+        background: #ccc;
+        cursor: pointer;
+      }
 
+      ul {
+        height: 130px;
+        width: 9999px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 0;
+        transition: all 0.5s ease-in-out;
+      }
 
+      ul img {
+        width: 130px;
+        height: 130px;
+        display: block;
+      }
+
+      ul li {
+        display: inline-block;
+      }
+
+      .carousel {
+        padding: 10px 50px;
+        position: relative;
+        border-radius: 25px;
+      }
+
+      .arrow {
+        position: absolute;
+        top: calc(50% - 12px);
+      }
+
+      .arrow.prev {
+        left: 16px;
+      }
+      .arrow.next {
+        right: 16px;
+      }
+
+      .strip {
+        overflow: hidden;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Introduction to Events</h1>
+    <div class="carousel">
+      <div class="strip">
+        <button class="arrow prev">⇦</button>
+        <button class="arrow next">⇨</button>
+
+        <ul class="carousel-list">
+          <li><img src="https://ru.js.cx/carousel/1.png" alt="alt" /></li>
+          <li><img src="https://ru.js.cx/carousel/2.png" alt="alt" /></li>
+          <li><img src="https://ru.js.cx/carousel/3.png" alt="alt" /></li>
+          <li><img src="https://ru.js.cx/carousel/4.png" alt="alt" /></li>
+          <li><img src="https://ru.js.cx/carousel/5.png" alt="alt" /></li>
+          <li><img src="https://ru.js.cx/carousel/6.png" alt="alt" /></li>
+          <li><img src="https://ru.js.cx/carousel/7.png" alt="alt" /></li>
+          <li><img src="https://ru.js.cx/carousel/8.png" alt="alt" /></li>
+          <li><img src="https://ru.js.cx/carousel/9.png" alt="alt" /></li>
+          <li><img src="https://ru.js.cx/carousel/10.png" alt="alt" /></li>
+        </ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>

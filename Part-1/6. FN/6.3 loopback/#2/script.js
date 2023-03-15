@@ -17,6 +17,8 @@ function Counter() {
 
 let counter = new Counter();
 
-console.log(counter.up()); // ?
-console.log(counter.up()); // ?
-console.log(counter.down()); // ?
+// Ответ: да, счетчик будет работать и будет иметь доступ к методам функции
+
+console.log(counter.up()); // 1
+console.log(counter.up()); // 2
+console.log(counter.down()); // 1

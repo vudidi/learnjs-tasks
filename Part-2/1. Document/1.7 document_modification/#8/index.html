@@ -7,8 +7,44 @@
 
 <body>
   <h1>Document</h1>
+  <html>
+
+  <head>
+    <style>
+      .styled-timer {
+        margin: 10px;
+      }
+
+      .styled-timer input {
+        background-color: transparent;
+        width: 70px;
+        height: 30px;
+        margin: 10px;
+        border-radius: 5px;
+        border: #82d0e0 1px solid;
+        cursor: pointer;
+        transition: ease 0.5s;
+      }
+
+      .styled-timer input:hover {
+        background-color: #82d0e0;       
+      }
+
+      .styled-timer #timer {
+        margin: 20px;
+      }
+    </style>
+
+  <body>
+    <div class="styled-timer">
+      <div id="timer">
+      </div>
+      <input type="button" onclick="timer.start()" value="Старт">
+      <input type="button" onclick="timer.stop()" value="Стоп">
+    </div>
+  </body>
+
   <script src="script.js"></script>
 </body>
-
 
 </html>

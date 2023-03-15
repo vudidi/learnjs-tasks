@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      .menu ul {
+        display: none;
+      }
 
-<head>
-  <meta charset="UTF-8">
-</head>
+      .menu.open ul {
+        display: block;
+      }
 
-<body>
-  <h1>Introduction to Events</h1>
-  <script src="script.js"></script>
-</body>
+      .menu .title {
+        cursor: pointer;
+      }
 
+      .menu .title::before {
+        content: '▶ ';
+      }
 
+      .menu.open .title::before {
+        content: '▼ ';
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Introduction to Events</h1>
+    <div class="menu">
+      <h2 class="title">Сладости (нажми меня)!</h2>
+      <ul>
+        <li>Пирожное</li>
+        <li>Пончик</li>
+        <li>Мёд</li>
+      </ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
